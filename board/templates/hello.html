@@ -1,0 +1,21 @@
+<!-- 뷰를 이렇게 html파일로 만들어도 django template파일로 사용한다 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>hello</h1>
+	<table border='1'>
+		<tr>
+			<th>이름</th>
+		</tr>
+	{% for name in list	%}
+		<tr>
+			<td>{{ name }}</td>
+		</tr>
+	{% endfor %} <!-- 끝을 내는 코드 -->
+	</table>
+</body>
+</html>
